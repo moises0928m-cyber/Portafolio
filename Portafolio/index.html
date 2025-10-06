@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <script src="./app.js" defer></script>
+ <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+ <title>Portafolio</title>
+</head>
+<body class="  bg-sky-100 text-stone-900 dark:bg-gray-800 dark:text-cyan-50 ">
+     <header>
+    <nav class=" relative flex justify-between py-10 px-6 text-lg font-medium tracking-widest md:items-center">
+     <a href="" ><img src="./img/eaa6e514-261f-452e-b3ea-9b59ff516d46.png" alt="" width="28" class="dark:bg-cyan-50"></a><!-- text-dark -->  
+     <div id="menu" class="bg-white dark:bg-slate-800 p-7 h-[280px] w-[200px]  flex-col  justify-around items-start rounded-lg  dark:text-white md:flex
+     md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-gray-800 hidden">    
+        <ul class="flex space-y-3 flex-col justify-around md:flex-row md:justify-center w-full   md:gap-4">  <!-- --><!--  -->
+            <li class="hover:text-red-400"><a href="">Quien soy</a></li>
+            <li class="hover:text-sky-500"><a href="">Habilidades</a></li>
+            <li class="hover:text-lime-600"><a href="">Proyectos<a></li>
+            <li class="hover:text-blue-500"><a href="">Contactos</a></li>  <!--  h-5/6  -->
+        </ul>
+        <!--boton modoblack-->
+        <button id="darkButton" class="mt-6 md:mt-0"> 
+<i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
+        </button>
+    
+     </div>
+      <!--   botom de hambuerguesa -->
+    <button id="menu-b" class="absolute top-10 right-12 md:hidden">
+            <span class="br1 block bg-black dark:bg-white my-2 rounded-b-md h-[3px] w-[28px]"></span> 
+            <span class="br2 block bg-black dark:bg-white my-2 rounded-b-md h-[3px] w-[28px]"></span>
+            <span class="br3 block bg-black dark:bg-white my-2 rounded-b-md h-[3px] w-[28px]"></span>
+        </button>
+    </nav>
+</header>
+<!-- seccion hero -->
+<main>
+<section class="my-0 flex flex-col lg:flex-row lg:h-[650px]">
+    <div class="p-10 lg:w-[80%] lg:h-[500px] lg:self-center">
+        <h1 class="text-red-400 dark:text-green-400 text-2xl font-bold tracking-widest leading-10">Hola, soy</h1>
+        <p class="py-2 text-3xl font-bold text-yellow-300 dark:text-yellow-200">Moises Nogales</p>
+        <p class="text-3xl font-bold text-green-400 dark:text-red-400 ">Alumno de funval </p>
+        <p class="mt-5 text-lg lg:text-4xl">Estoy estudiandido desarrollo web aprendiendo sobre html y css. 
+            me gusta mucho la tecnologia y la programacion porque es un mundo ilimitado de crear y diseñar me rompo la cabeza pero me encanta</p>
+         <!-- redes sociales --> 
+          <div class="py-4 flex gap-2 text-2xl">
+            <a href="https://www.facebook.com/moises.nogales.94" target="_blank" class="hover:text-sky-600"><i class="bi bi-facebook"></i></a>
+            <a href="https://github.com/moises0928m-cyber" target="_blank" ><i class="bi bi-github"></i></a>
+            <a href="https://wa.me/59174627838?text=Hola%20Moises%2C%20vi%20tu%20portafolio"target="_blank" rel="noopener noreferrer" class="hover:text-green-500 "><i class="bi bi-whatsapp"></i></a>
+         </div>  
+         <div class="bg-blue-200 h-10 w-25 flex items-center justify-center rounded-xl hover:bg-sky-500 border-2 border-sky-300  dark:bg-gray-800 "><a href="./Hoja de Vida(4).pdf" download="cv.hoja de vida de moises.pdf"  >Hoja de vida </a></div>
+    </div>
+    <!-- imagen -->
+     <div class=" w-full flex items-center justify-center relative bottom-23 pointer-events-none">
+        <div class=" w-80 h-100 bg-[url('./img/Moises.png')]  bg-no-repeat lg:w-[80%] lg:h-[80%] bg-contain lg:bg-no-repeat">
+
+        </div><!-- w-[100px] h-[300px m-auto] --><!-- lg:bg-top -->
+    </div>
+</section>
+<!-- 2 seccion de experiencia laboral y habilidades-->
+ <h2 class="flex items-center justify-center font-bold text-2xl tracking-widest">Habilidades y Experiencia</h2> 
+<div class="flex flex-row justify-center items-center h-40 lg:h-150 p-10 w-full place-content-around ltr:"> 
+    <img src="./img/css.png" alt="" class="h-[60%] w-[25%]"> 
+    <img src="./img/html.png" alt="" class="h-[100%] w-[35%]">
+    <img src="./img/image-removebg-preview.png" alt="" class="h-[80%] w-[28%] me-5"> 
+    <img src="./img/javascript.png" alt="" class="h-[50%] w-[20%] ">
+    </div>
+    <div class="p-10"><p class="text-xl dark:text-amber-50 lg:text-4xl">Estoy aprendiendo a desarrollar, llevo 2 semanas con html y css, 1 semana con tailwindcssy y js las experiencia que tengo son pocas solo practicas de lo estoy estudiando pero voy a mejorar mucho</p></div>
+    <!--Practicas-->
+    <h3 class="text-3xl font-bold tracking-widest dark:text-amber-50 text-center">Practicas</h3>
+   <div class="h-[100%] w-[100%]  ">
+    <section class="my-12 flex flex-col items-center justify-center  ">
+         <!-- Practica 1 -->
+       <div class="lg:w-[25%] flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
+        <img src="./img/Pratica1.png" alt="" class="h-50 w-50 mt-2 opacity-40 hover:opacity-100">
+        <h4 class="p-2">Mi pagina web de un poco sobre mi</h4>
+         
+       </div>
+       <div class=" flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 w-68 lg:w-84 text-amber-50 rounded-b-xl p-2 mb-4">
+        <a href="https://moises0928m-cyber.github.io/Funval-2025/" target="blank"><i class="bi bi-eye "></i></a>
+         <article class="">
+          <span>HTML</span>
+          <span>CSS</span>
+        </article> 
+      </div>
+      <!-- practica2 -->
+        <div class="lg:w-[25%] flex flex-col w-[270px] items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
+        <img src="./img/Practica2.png" alt="" class="h-50 w-50 mt-2 opacity-65 hover:opacity-100">
+        <h4 class="p-2">Recreacion de la pagina Epic game </h4>
+         
+       </div>
+       <div class=" flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 w-68 lg:w-84 text-amber-50 rounded-b-xl p-2 mb-4">
+        <a href="https://moises0928m-cyber.github.io/Funval-2025/" target="blank"><i class="bi bi-eye "></i></a>
+         <article class="">
+          <span>HTML</span>
+          <span>CSS</span>
+        </article> 
+      </div>
+       <!-- Practica 3 -->
+          <div class="lg:w-[25%] w-[270px] flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
+        <img src="./img/Pratica3.png" alt="" class="h-50 w-50 mt-2 opacity-35 hover:opacity-100">
+        <h4 class="p-2">Mi pagina web de hero section sobre oso anteojos</h4>
+         
+       </div>
+       <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 w-68 lg:w-84 text-amber-50 rounded-b-xl p-2 mb-4">
+        <a href="https://moises0928m-cyber.github.io/Funval-2025/" target="blank"><i class="bi bi-eye "></i></a>
+         <article class="">
+          <span>HTML</span>
+          <span>TAILWIND.CSS</span>
+        </article> 
+      </div>
+     
+      <!-- tailwind -->
+         <div class="lg:w-[25%] w-[270px] flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
+        <img src="./img/Tailwind.png" alt="" class="h-50 w-50 mt-2 opacity-35 hover:opacity-100">
+        <h4 class="p-2">Maqueta de una pagina responsive</h4>
+         
+       </div>
+       <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 w-68 lg:w-84 text-amber-50 rounded-b-xl p-2">
+        <a href="https://moises0928m-cyber.github.io/Funval-2025/" target="blank"><i class="bi bi-eye "></i></a>
+         <article class="">
+          <span>HTML</span>
+          <span>TAILWIND.CSS</span>
+        </article> 
+      </div>
+    </div>  
+    
+<!-- formulario -->
+<form class="max-w-md mx-auto">
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="text" name="" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre completo</label>
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="email" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="number" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero de contacto</label>
+  </div>
+ <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar</button>
+</form>
+
+</main>
+</body>
+</html>
+
+
+  
+
