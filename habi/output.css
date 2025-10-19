@@ -553,6 +553,9 @@
   .bg-\[url\(\'\.\/img\/dia\.jpg\'\)\] {
     background-image: url('./img/dia.jpg');
   }
+  .bg-\[url\(\'\/https\:\/\/moises0928m-cyber\.github\.io\/Portafolioimg\/blue\.png\'\)\] {
+    background-image: url('/https://moises0928m-cyber.github.io/Portafolioimg/blue.png');
+  }
   .bg-\[url\(\'\/img\/blue\.png\'\)\] {
     background-image: url('/img/blue.png');
   }
@@ -561,6 +564,12 @@
   }
   .bg-\[url\(\'Portafolio\/img\/dia\.jpg\'\)\] {
     background-image: url('Portafolio/img/dia.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/moises0928m-cyber\.github\.io\/Portafolio\/img\/blue\.png\'\)\] {
+    background-image: url('https://moises0928m-cyber.github.io/Portafolio/img/blue.png');
+  }
+  .bg-\[url\(\'https\:\/\/moises0928m-cyber\.github\.io\/Portafolio\/img\/dia\.jpg\'\)\] {
+    background-image: url('https://moises0928m-cyber.github.io/Portafolio/img/dia.jpg');
   }
   .bg-\[url\(\'img\/blue\.png\'\)\] {
     background-image: url('img/blue.png');
@@ -1174,6 +1183,16 @@
   .dark\:bg-\[url\(\'Portafolio\/img\/noche1\.jpg\'\)\] {
     &:where(.dark, .dark *) {
       background-image: url('Portafolio/img/noche1.jpg');
+    }
+  }
+  .dark\:bg-\[url\(\'https\:\/\/moises0928m-cyber\.github\.io\/Portafolio\/img\/noche1\.jpg\'\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url('https://moises0928m-cyber.github.io/Portafolio/img/noche1.jpg');
+    }
+  }
+  .dark\:bg-\[url\(\'https\:\/\/moises0928m-cyber\.github\.io\/Portafolio\/img\/rose\.png\'\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url('https://moises0928m-cyber.github.io/Portafolio/img/rose.png');
     }
   }
   .dark\:bg-\[url\(\'img\/noche1\.jpg\'\)\] {
