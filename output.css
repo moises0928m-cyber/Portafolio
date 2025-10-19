@@ -562,6 +562,9 @@
   .bg-\[url\(\'Portafolio\/img\/dia\.jpg\'\)\] {
     background-image: url('Portafolio/img/dia.jpg');
   }
+  .bg-\[url\(\'img\/blue\.png\'\)\] {
+    background-image: url('img/blue.png');
+  }
   .bg-\[url\(\'img\/dia\.jpg\'\)\] {
     background-image: url('img/dia.jpg');
   }
