@@ -3,7 +3,7 @@
 let array=[
     {
 nombre:"html",
-imagen:"../img/html.PNG",
+imagen:"../img/html.png",
 info:"En proceso de mejorar constantemente "
 },
     {
@@ -23,7 +23,7 @@ info:"En proceso de mejorar constantemente "
 },
     {
 nombre:"githud",
-imagen:"../img/githuds.PNG",
+imagen:"../img/githuds.png",
 info:"En proceso de mejorar constantemente "
 },
 ]
