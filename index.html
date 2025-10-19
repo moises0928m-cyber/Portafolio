@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
  <script src="./app.js" defer></script>
+
  <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -24,10 +25,10 @@
      <div id="menu" class="bg-white dark:bg-slate-800 p-7 h-[280px] w-[200px]  flex-col  justify-around items-start rounded-lg  dark:text-white md:flex
      md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-gray-800 hidden">    
         <ul class="flex space-y-3 flex-col justify-around md:flex-row md:justify-center w-full   md:gap-4">  <!-- --><!--  -->
-            <li class="hover:text-red-400"><a href="">Quien soy</a></li>
-            <li class="hover:text-sky-500"><a href="">Habilidades</a></li>
-            <li class="hover:text-lime-600"><a href="">Proyectos<a></li>
-            <li class="hover:text-blue-500"><a href="">Contactos</a></li>  <!--  h-5/6  -->
+            
+            <li class="hover:text-sky-500"><a href="./habi/index.html" target="_blank">Habilidades</a></li>
+            <li class="hover:text-lime-600"><a href="./proyectos/index.html" target="_blank">Proyectos<a></li>
+              <!--  h-5/6  -->
         </ul>
         <!--boton modoblack-->
         <button id="darkButton" class="mt-6 md:mt-0"> 
@@ -67,104 +68,24 @@
         </div><!-- w-[100px] h-[300px m-auto] --><!-- lg:bg-top -->
     </div>
 </section>
-<!-- 2 seccion de experiencia laboral y habilidades-->
- <h2 class="flex items-center justify-center font-bold text-2xl tracking-widest">Habilidades y Experiencia</h2> 
-<div class="flex flex-row justify-center items-center h-40 lg:h-150 p-10 w-full place-content-around ltr:"> 
-    <img src="./img/css.png" alt="" class="h-[60%] w-[25%]"> 
-    <img src="./img/html.png" alt="" class="h-[100%] w-[35%]">
-    <img src="./img/image-removebg-preview.png" alt="" class="h-[80%] w-[28%] me-5"> 
-    <img src="./img/javascript.png" alt="" class="h-[50%] w-[20%] ">
-    </div>
-    <div class="p-10"><p class="text-xl dark:text-amber-50 lg:text-4xl">Estoy aprendiendo a desarrollar, llevo 2 semanas con html y css, 1 semana con tailwindcssy y js las experiencia que tengo son pocas solo practicas de lo estoy estudiando pero voy a mejorar mucho</p></div>
-    <!--Practicas-->
-    <h3 class="text-3xl font-bold tracking-widest dark:text-amber-50 text-center">Practicas</h3>
-   <div class="grid grid-cols-1 h-full w-full lg:grid-cols-2 lg:grid-rows-2  gap-4 p-4">
-  <!-- Practica 1 -->
-  <section class="flex flex-col items-center justify-center">
-    <div class="w-[70%] lg:w-full">
-      <div class="flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
-        <img src="./img/Pratica1.png" alt="Práctica 1" class="h-50 w-50 mt-2 opacity-40 hover:opacity-100">
-        <h4 class="p-2 text-center">Mi página web sobre mí</h4>
-      </div>
-      <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 text-amber-50 rounded-b-xl p-2 mb-4">
-        <a href="https://moises0928m-cyber.github.io/Funval-2025/" target="_blank"><i class="bi bi-eye"></i></a>
-        <article>
-          <span>HTML</span>
-          <span>CSS</span>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <!-- Practica 2 -->
-  <section class="flex flex-col items-center justify-center">
-    <div class="w-[70%] lg:w-full">
-      <div class="flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
-        <img src="./img/Practica2.png" alt="Práctica 2" class="h-50 w-50 mt-2 opacity-65 hover:opacity-100">
-        <h4 class="p-2 text-center">Recreación de la página Epic Games</h4>
-      </div>
-      <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 text-amber-50 rounded-b-xl p-2 mb-4">
-        <a href="https://moises0928m-cyber.github.io/Funval-2025-2/" target="_blank"><i class="bi bi-eye"></i></a>
-        <article>
-          <span>HTML</span>
-          <span>CSS</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Practica 3 -->
-  <section class="flex flex-col items-center justify-center">
-    <div class="w-[70%] lg:w-full">
-      <div class="flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
-        <img src="./img/Pratica3.png" alt="Práctica 3" class="h-50 w-50 mt-2 opacity-35 hover:opacity-100">
-        <h4 class="p-2 text-center">Hero section sobre el oso de anteojos</h4>
-      </div>
-      <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 text-amber-50 rounded-b-xl p-2 mb-4">
-        <a href="https://moises0928m-cyber.github.io/Tarea4-/" target="_blank"><i class="bi bi-eye"></i></a>
-        <article>
-          <span>HTML</span>
-          <span>TAILWIND.CSS</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tailwind -->
-  <section class="flex flex-col items-center justify-center">
-    <div class="w-[70%] lg:w-full">
-      <div class="flex flex-col items-center justify-center text-amber-50 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 rounded-t-xl">
-        <img src="./img/Tailwind.png" alt="Tailwind" class="h-50 w-50 mt-2 opacity-35 hover:opacity-100">
-        <h4 class="p-2 text-center">Maqueta de una página responsive</h4>
-      </div>
-      <div class="flex justify-end flex-row-reverse gap-1 bg-slate-500 dark:bg-sky-100 dark:text-gray-900 text-amber-50 rounded-b-xl p-2">
-        <a href="http://127.0.0.1:5500/dia-8/tarde/index.html" target="_blank"><i class="bi bi-eye"></i></a>
-        <article>
-          <span>HTML</span>
-          <span>TAILWIND.CSS</span>
-        </article>
-      </div>
-    </div>
-  </section>
-</div> 
-    
 <!-- formulario -->
-<form class="max-w-md mx-auto">
+<form id="formulario" class="max-w-md mx-auto">
   <div class="relative z-0 w-full mb-5 group">
-      <input type="text" name="" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <input type="text" name="nombre" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
       <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre completo</label>
   </div>
   <div class="relative z-0 w-full mb-5 group">
-      <input type="email" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <input type="email" name="email" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
       <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
   </div>
   <div class="relative z-0 w-full mb-5 group">
-      <input type="number" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <input type="number" name="numero" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
       <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero de contacto</label>
   </div>
- <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar</button>
+ <label for="message" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Su mensaje</label>
+  <textarea id="message" name="mensaje" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3.5" placeholder=""></textarea>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Enviar</button>
 </form>
 
 </main>

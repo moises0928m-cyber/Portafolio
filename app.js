@@ -52,3 +52,20 @@ darkButton.addEventListener('click', function() {
     }
     
 });
+
+let personas=[];
+let form=document.querySelector("#formulario")
+form.addEventListener("submit",(e) =>{
+  e.preventDefault();
+  let datos=new FormData(form)
+  let nombre=datos.get ("nombre");
+  let email=datos.get ("email");
+  let numero=datos.get ("numero");
+  let mensaje=datos.get("mensaje")
+
+  let newpersonas={nombre, email ,numero,mensaje}
+personas.push(newpersonas)
+console.log(personas);
+
+form.reset();
+})
