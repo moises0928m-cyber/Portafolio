@@ -27,6 +27,13 @@ let proyecto=[
         url:"https://moises0928m-cyber.github.io/funval//dia-8/tarde/index.html",
         img:"../img/Tailwind.png"
     },
+     {
+        nombre:"Proyecto final",
+        info:"Desarrollar una aplicación web responsive ",
+        metodo:"Html Js TailwindCss",
+        url:"https://moises0928m-cyber.github.io/Proyecto-final/",
+        img:"../img/final.png"
+    },
 ]
 
 let contenedor=document.querySelector("#cards")
